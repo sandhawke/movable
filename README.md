@@ -1,7 +1,18 @@
 # movable
-[![NPM version][npm-image]][npm-url]
 
 RDF Schema for making RDF schemas be movable
 
-[npm-image]: https://img.shields.io/npm/v/movable.svg?style=flat-square
-[npm-url]: https://npmjs.org/package/movable
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org/",
+  "@type": "Person",
+  "name": "Jane Doe",
+  "jobTitle": "Professor",
+  "telephone": "(425) 123-4567",
+  "url": "http://www.janedoe.com"
+}
+</script>
+
+<script>
+alert('hello, world!')
+</script>
