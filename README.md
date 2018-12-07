@@ -1,18 +1,13 @@
-# movable
+# movable: a RDF Schema for making RDF schemas be movable
 
-RDF Schema for making RDF schemas be movable
+This schema is helpful for writing "movable" RDF schemas. Movable schemas (also called ontologies or vocabularies) retain their semantics even when moved to a different URL.  As such, while the original version of this document is hosted at https://sandhawke.github.io/movable, it is possible (and recommended) to use this schema in a way which does not involve trusting either github or the author (username sandhawke). 
 
-<script type="application/ld+json">
-{
-  "@context": "http://schema.org/",
-  "@type": "Person",
-  "name": "Jane Doe",
-  "jobTitle": "Professor",
-  "telephone": "(425) 123-4567",
-  "url": "http://www.janedoe.com"
-}
-</script>
+In fact, due to limitions of github hosting, the namespace URL for this schema is different for different formats.  This would normally break interoperability, but with movable schemas, it's fine:
 
-<script>
-alert('hello, world!')
-</script>
+|Format|Media Type|Namespace URL|
+|:----:|:---:|:------------|
+|Turtle|text/turtle|https://sandhawke.github.io/movable/schema.ttl#
+|JSON-LD|application/ld+json|https://sandhawke.github.io/movable/schema.jsonld#
+|JSON-LD|text/html with script tag|https://sandhawke.github.io/movable/schema/
+
+More details TBD.
